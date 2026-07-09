@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Generated output (regenerated at runtime by generate.py / pm2)
+public/
+
+# Throwaway investigation / scratch scripts (hardcode absolute local DB paths)
+app/_distinct.py
+app/_probe.py
+app/_verify2.py
+
+# Standalone dev server (not used by deploy; binds 0.0.0.0) — keep deploy clean
+app/server.js
+
+# Secrets / local config (never commit)
+.env
+.env.*
+*.local
+*.pem
+*.key
+id_rsa*
+Caddyfile
+caddy*.json
+
+# OS / editor
+.DS_Store
+*.swp
